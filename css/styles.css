@@ -32,7 +32,6 @@ footer{
 }
 
 .fixed, .second-nav {
-    padding: 1em 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,6 +71,7 @@ li, a {
 
 .header-container, .body-container, .footer-container { 
     max-width: 70em;
+    padding: 1em 0;
     /* max-width: 1080px; */
     margin: 0 auto; 
     background-color: orange;
