@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+header{
+    background-color: yellow;
+}
+
+main{
+    background-color: gray;
+    height: 100vh;
+}
+
+footer{
+    background-color: purple;
+}
+
+
+.header-container, .body-container, .footer-container { 
+    max-width: 70em;
+    /* max-width: 1080px; */
+    margin: 0 auto; 
+    background-color: orange;
+}
