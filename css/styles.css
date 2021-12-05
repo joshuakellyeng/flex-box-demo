@@ -4,8 +4,11 @@
     box-sizing: border-box;
 }
 
+main {
+    margin: 0 auto;
+}
 
-
+/* color guide classes  */
 
 header{
     background-color: yellow;
@@ -20,6 +23,52 @@ footer{
     background-color: purple;
 }
 
+
+/* header control classes  */
+
+#logo{
+    margin:0;
+    padding: 0;
+}
+
+.fixed, .second-nav {
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+li, a {
+    list-style: none;
+    display: inline;
+    padding: 0.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* content control classes  */
 
 .header-container, .body-container, .footer-container { 
     max-width: 70em;
