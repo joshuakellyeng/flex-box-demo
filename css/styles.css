@@ -1,78 +1,121 @@
+@import url('http://fonts.cdnfonts.com/css/butler');
+@import url('http://fonts.cdnfonts.com/css/jost');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Jost*', sans-serif;
+	line-height: 1.5;
+	position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Butler', sans-serif;
 }
 
 main {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 /* color guide classes  */
 
-header{
-    background-color: yellow;
+header {
+	/* background-color: yellow; */
 }
 
-main{
-    background-color: gray;
-    height: 100vh;
+main {
+	/* background-color: gray; */
 }
 
-footer{
-    background-color: purple;
+footer {
+	/* background-color: purple; */
 }
 
+img {
+	padding: 2px;
+	width: 100%;
+	height: auto;
+}
 
 /* header control classes  */
 
-#logo{
-    margin:0;
-    padding: 0;
+#logo {
+	margin: 0;
+	padding: 0;
 }
 
-.fixed, .second-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.fixed {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
 }
 
-
-
-
-
-
-li, a {
-    list-style: none;
-    display: inline;
-    padding: 0.5em;
+.fixed,
+.second-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
+li,
+a {
+	list-style: none;
+	display: inline;
+	padding: 0 0.5em;
+	text-decoration: none;
+	color: #222;
+}
 
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
+.splash-screen {
+	height: 800px;
+	width: 100%;
+	background-image: url(https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80);
+	background-size: cover;
+	background-position: center;
+}
 
+/* modal section */
+.modal {
+	display: flex;
+	justify-content: center;
+}
 
+.modal img:nth-of-type(1),
+.modal img:nth-of-type(3) {
+	flex-shrink: 2;
+}
 
+.fourbyfour {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.fourbyfour img {
+	max-width: 50%;
+}
 
 /* content control classes  */
 
-.header-container, .body-container, .footer-container { 
-    max-width: 70em;
-    padding: 1em 0;
-    /* max-width: 1080px; */
-    margin: 0 auto; 
-    background-color: orange;
+.header-container,
+.body-container,
+.footer-container {
+	max-width: 70em;
+	padding: 0.5em 0;
+	margin: 0 auto;
 }
