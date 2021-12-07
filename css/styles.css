@@ -26,31 +26,13 @@ main {
 	margin: 0 auto;
 }
 
-/* color guide classes  */
-
-header {
-	/* background-color: yellow; */
-}
-
-main {
-	/* background-color: gray; */
-}
-
-footer {
-	/* background-color: purple; */
-}
-
-img {
-	padding: 2px;
-	width: 100%;
-	height: auto;
-}
 
 /* header control classes  */
 
 #logo {
 	margin: 0;
 	padding: 0;
+	text-decoration: none;
 }
 
 .fixed {
@@ -93,29 +75,111 @@ a {
 .modal {
 	display: flex;
 	justify-content: center;
+    height: 800px;
 }
 
-.modal img:nth-of-type(1),
-.modal img:nth-of-type(3) {
-	flex-shrink: 2;
-}
+/* 4by4 */
+
 
 .fourbyfour {
 	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.row {
+	display: flex;
 }
 
-.fourbyfour img {
-	max-width: 50%;
+.row img {
+	height: 50em;
+	width: 100%;
 }
+
+
+/* parallax */
+
+.parallax {
+	background-image: url(https://images.unsplash.com/photo-1580657018950-c7f7d6a6d990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+.sub {
+	border: 10px solid white; 
+	padding: 10em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+
+input[type=email] {
+	margin: 0 1em;
+	/* padding: 0 10em; */
+	border: 2px solid white;
+}
+
+.parallax button {
+	color: #fff;
+	border: 3px solid white;
+	background-color: transparent;
+	border-radius: 0;
+	padding: 0 1em;
+}
+
+button:hover {
+	border: 5px solid;
+}
+
+/* footer content */
+
+footer {
+	margin: 1em;
+	padding: 1em;
+}
+
+.footer-content{
+
+	display: flex; 
+	justify-content: space-evenly;
+	padding: 2em;
+
+}
+
+.list li {
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+/* styling  */
+
+a:hover {
+	text-decoration: underline;
+}
+
 
 /* content control classes  */
+
+img {
+	padding: 2px;
+	width: 100%;
+	height: auto;
+}
 
 .header-container,
 .body-container,
 .footer-container {
-	max-width: 70em;
+	max-width: 80em;
 	padding: 0.5em 0;
 	margin: 0 auto;
 }
